@@ -1,0 +1,13 @@
+/Users/piotrgsservices/Projects/AOC_2019/AOC_2019/bin/Debug/AOC_2019.exe
+/Users/piotrgsservices/Projects/AOC_2019/AOC_2019/bin/Debug/AOC_2019.pdb
+/Users/piotrgsservices/Projects/AOC_2019/AOC_2019/obj/Debug/AOC_2019.csprojAssemblyReference.cache
+/Users/piotrgsservices/Projects/AOC_2019/AOC_2019/obj/Debug/AOC_2019.exe
+/Users/piotrgsservices/Projects/AOC_2019/AOC_2019/obj/Debug/AOC_2019.pdb
+/Users/piotrgsservices/Projects/AOC_2019/AoC2019/bin/Debug/Day1_input.txt
+/Users/piotrgsservices/Projects/AOC_2019/AoC2019/bin/Debug/Day2_Input.txt
+/Users/piotrgsservices/Projects/AOC_2019/AoC2019/bin/Debug/Day3_input.txt
+/Users/piotrgsservices/Projects/AOC_2019/AoC2019/bin/Debug/AOC_2019.exe
+/Users/piotrgsservices/Projects/AOC_2019/AoC2019/bin/Debug/AOC_2019.pdb
+/Users/piotrgsservices/Projects/AOC_2019/AoC2019/obj/Debug/AOC_2019.csprojAssemblyReference.cache
+/Users/piotrgsservices/Projects/AOC_2019/AoC2019/obj/Debug/AOC_2019.exe
+/Users/piotrgsservices/Projects/AOC_2019/AoC2019/obj/Debug/AOC_2019.pdb

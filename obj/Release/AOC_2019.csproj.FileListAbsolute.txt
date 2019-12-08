@@ -1,0 +1,5 @@
+/Users/piotrgsservices/Projects/AOC_2019/AOC_2019/bin/Release/AOC_2019.exe
+/Users/piotrgsservices/Projects/AOC_2019/AOC_2019/obj/Release/AOC_2019.exe
+/Users/piotrgsservices/Projects/AOC_2019/AOC_2019/bin/Release/Day1_input.txt
+/Users/piotrgsservices/Projects/AOC_2019/AOC_2019/bin/Release/Day2_Input.txt
+/Users/piotrgsservices/Projects/AOC_2019/AOC_2019/bin/Release/Day3_input.txt
