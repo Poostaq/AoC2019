@@ -18,13 +18,15 @@ namespace AOC_2019
                 string[] object_orbiter = line.Split(')');
                 orbiters.Add(Tuple.Create(object_orbiter[0], object_orbiter[1]));
             }
-            //for(int x= 0; x < orbiters.Count; x++)
-            //{
-            //    orbits_count += find_total_orbits(orbiters[x].Item2);
-            //}
-            //Console.WriteLine(orbits_count);
-            int a = find_total_orbit_jups_to_SAN();
-            Console.WriteLine(a);
+            //DAY 6 FIRST PART
+            for (int x = 0; x < orbiters.Count; x++)
+            {
+                orbits_count += find_total_orbits(orbiters[x].Item2);
+            }
+            Console.WriteLine(orbits_count);
+
+            //DAY 6 SECOND PART
+            Console.WriteLine(find_total_orbit_jups_to_SAN());
         }
 
         private int find_total_orbits(string name)
@@ -54,17 +56,12 @@ namespace AOC_2019
             return result;
         }
 
-        private int find_total_orbit_jups_to_SAN()
+        private Tuple<int, List<string>> find_total_orbits_and_list_of_jumps(string name)
         {
-            Console.WriteLine("I started");
+
+            List<string> visited_places = new List<string>();
+            var current_check = name;
             int result = 0;
-
-            int you_jumps = 0;
-            int san_jumps = 0;
-            List<string> visited_places_you = new List<string>();
-            List<string> visited_places_san = new List<string>();
-
-            var current_check = "YOU";
             bool found_center = false;
             while (found_center != true)
             {
@@ -72,8 +69,8 @@ namespace AOC_2019
                 {
                     if (orbiters[y].Item2 == current_check)
                     {
-                        you_jumps += 1;
-                        visited_places_you.Insert(0, orbiters[y].Item1);
+                        result += 1;
+                        visited_places.Insert(0, orbiters[y].Item1);
                         if (orbiters[y].Item1 == "COM")
                         {
                             found_center = true;
@@ -86,41 +83,27 @@ namespace AOC_2019
                     }
                 }
             }
-            Console.WriteLine("You jumps: " + you_jumps);
-            current_check = "SAN";
-            found_center = false;
+            return Tuple.Create(result, visited_places);
+        }
 
-            while (found_center != true)
-            {
-                for (int y = 0; y < orbiters.Count; y++)
-                {
-                    if (orbiters[y].Item2 == current_check)
-                    {
-                        san_jumps += 1;
-                        visited_places_san.Insert(0, orbiters[y].Item1);
-                        if (orbiters[y].Item1 == "COM")
-                        {
-                            found_center = true;
-                        }
-                        else
-                        {
-                            current_check = orbiters[y].Item1;
-                        }
-                        break;
-                    }
-                }
-            }
-            Console.WriteLine("San jumps: " + san_jumps);
+        private int find_total_orbit_jups_to_SAN()
+        {
+            int result = 0;
+            Tuple <int, List<string>> you = find_total_orbits_and_list_of_jumps("YOU");
+            Tuple<int, List<string>> san = find_total_orbits_and_list_of_jumps("SAN");
+
 
             for (int x = 0; x < 2000; x++)
             {
-                if (visited_places_you[x] != visited_places_san[x])
+                if (you.Item2[x] != san.Item2[x])
                 {
-                    result = you_jumps - x + san_jumps - x;
+                    result = you.Item1 - x + san.Item1 - x;
                     break;
                 }
             }
             return result;
         }
+
+
     }
 }
