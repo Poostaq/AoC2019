@@ -9,7 +9,8 @@ namespace AOC_2019
             //AOC_2019_Day1 result = new AOC_2019_Day1();
             //AOC_2019_Day2 result2 = new AOC_2019_Day2();
             //AOC_2019_Day3 result3 = new AOC_2019_Day3();
-            AOC_2019_Day4 result4 = new AOC_2019_Day4();
+            //AOC_2019_Day4 result4 = new AOC_2019_Day4();
+            AOC_2019_Day6 result6 = new AOC_2019_Day6();
         }
     }
 }
