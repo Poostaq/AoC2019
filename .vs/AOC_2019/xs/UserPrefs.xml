@@ -1,11 +1,18 @@
 ﻿<Properties StartupConfiguration="{8CACE85C-6AB5-459A-9E79-E652965491A2}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="EmptyCSSFile.css" Line="1" Column="1" />
+      <File FileName="Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="13" Column="13" />
+      <File FileName="AOC_2019_Day6.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AOC_2019" expanded="True">
             <Node name="AOC_2019" expanded="True">
-              <Node name="AOC_2019_Day5.cs" selected="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

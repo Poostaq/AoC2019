@@ -37,6 +37,7 @@
     <Compile Include="AOC_2019_Day3.cs" />
     <Compile Include="AOC_2019_Day4.cs" />
     <Compile Include="AOC_2019_Day5.cs" />
+    <Compile Include="AOC_2019_Day6.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Day1_input.txt">
@@ -49,6 +50,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Day5_input.txt" />
+    <None Include="Day6_input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
